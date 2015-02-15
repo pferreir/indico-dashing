@@ -1,0 +1,29 @@
+auth_token: xxxxxxxxxxxxxxx
+
+indico:
+    api_key: xxxxxxxxxxxxxxx
+    secret: xxxxxxxxxxxxxxx
+
+team_members:
+  - username: jdoe
+    name: John Doe
+
+widgets:
+  branches:
+    - path: indico/indico
+      title: Indico
+      target_elem: github_branches_indico
+    - path: indico/indico-plugins
+      title: Indico Plugins
+      target_elem: github_branches_plugins
+  team_repos:
+    - name: indico
+      title: Indico
+      target_elem: github_repos_indico
+    - name: indico-plugins
+      title: Indico Plugins
+      target_elem: github_repos_plugins
+  pull_requests:
+    - path: indico/indico
+      target_elem: github-pr-indico
+

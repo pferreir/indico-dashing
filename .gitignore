@@ -1,4 +1,5 @@
 *DS_STORE
 history.yml
-config/*
+config/*.yml
+config/*.yaml
 Gemfile.lock
