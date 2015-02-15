@@ -1,0 +1,55 @@
+.widget-team-repos {
+
+    h1 {
+        margin-bottom: 0.1em;
+    }
+
+    h2 {
+        margin-bottom: 0.2em;
+    }
+
+    ul.head-list li {
+
+        text-align: left;
+        height: 40px;
+
+        * {
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 1em;
+        }
+        .title {
+            font-size: 0.9em;
+            font-weight: bold;
+            min-width: 100px;
+            max-width: 160px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        img.author {
+            width: 16px;
+            border-radius: 4px;
+            float: right;
+        }
+
+        img.repo-owner {
+            width: 32px;
+            border-radius: 4px;
+            float: left;
+        }
+
+        .date {
+            float: right;
+            font-size: 0.8em;
+        }
+
+    }
+
+    .updated-at {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    overflow: hidden;
+    background-color: #A9863A;
+}

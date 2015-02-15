@@ -1,0 +1,10 @@
+<h1 data-bind="title"></h2>
+<h2 data-bind="meeting_title" data-showif='exists'></h2>
+<p data-bind="timestamp" class="date" data-showif='exists'></p>
+<ul class="avatar-list" data-showif='exists'>
+  <li data-foreach-user="written">
+    <img data-bind-src="written[user].avatar" data-bind-data-wrote-minutes="written[user].written" data-bind-alt="user" data-bind-title="user" class="user"/>
+  </li>
+</ul>
+
+<p data-hideif='exists'>No meetings scheduled</p>

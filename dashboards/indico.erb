@@ -1,0 +1,58 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+
+</script>
+<% content_for :title do %>1080p dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="time" data-view="Clock" data-title="Time"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="indico-meeting" data-view="IndicoMeetings" data-title="Team Meeting"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="pressure" data-view="Meter" data-title="Pressure" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="message" data-view="Text" data-title="Message"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-view="PullRequests" data-id="github-pr-indico"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="ci_travis_indico" data-view="Travis" data-unordered="true" data-title="Indico CI"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="github_branches_indico" data-view="Branches" data-title="Indico Branches"></div>
+    </li>
+
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="github_repos_indico" data-view="TeamRepos" data-title="Indico Cross-Repo"></div>
+    </li>
+
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="github_branches_plugins" data-view="Branches" data-title="Indico Plugins Branches"></div>
+    </li>
+
+
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="ci_travis_indico_plugins" data-view="Travis" data-unordered="true" data-title="Indico Plugins CI"></div>
+    </li>
+
+    <li data-row="3" data-col="4" data-sizex="1" data-sizey="1">
+      <div data-id="github_repos_plugins" data-view="TeamRepos" data-title="Indico Plugins Cross-Repo"></div>
+    </li>
+  </ul>
+</div>

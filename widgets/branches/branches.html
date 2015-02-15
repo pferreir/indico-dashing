@@ -1,0 +1,12 @@
+<h1 class="header" data-bind="repo_name"></h1>
+<h2 class="header">Recent Branches</h2>
+
+<ul class="head-list">
+  <li data-foreach-head="heads.sortedByDescending.timestamp">
+    <span class="title" data-bind="head.name"></span>
+    <span class="date" data-bind="head.date"></span>
+    <img class="author" data-bind-alt="head.author" data-bind-title="head.author" data-bind-data-timestamp="head.timestamp" data-bind-src="head.avatar"/>
+  </li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

@@ -1,0 +1,11 @@
+<h1 class="header" data-bind="repo_name"></h1>
+<h2 class="header">Cross-repo activity</h2>
+<ul class="head-list">
+  <li data-foreach-head="heads.sortedByDescending.timestamp">
+    <img class="repo-owner" data-bind-alt="head.repo_owner" data-bind-title="head.repo_owner" data-bind-src="head.repo_owner_avatar"/>
+    <span class="title" data-bind="head.name"></span>
+    <img class="author" data-bind-alt="head.author" data-bind-title="head.author" data-bind-src="head.avatar"/>
+    <span class="date" data-bind="head.date"></span>
+  </li>
+</ul>
+<p class="updated-at" data-bind="updatedAtMessage"></p>

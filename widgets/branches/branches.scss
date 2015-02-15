@@ -1,0 +1,38 @@
+.widget-branches {
+
+    h1 {
+        margin-bottom: 0.1em;
+    }
+
+    h2 {
+        margin-bottom: 0.2em;
+    }
+
+    ul.head-list li {
+
+        text-align: left;
+        height: 40px;
+
+        * {
+            display: inline-block;
+            margin-right: 1em;
+        }
+        .title {
+            font-weight: bold;
+            min-width: 100px;
+        }
+
+        img.author {
+            width: 32px;
+            border-radius: 4px;
+            float: right;
+        }
+
+    }
+
+    .updated-at {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    overflow: hidden;
+    background-color: #A93A5C;
+}

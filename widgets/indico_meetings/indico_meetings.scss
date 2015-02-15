@@ -1,0 +1,38 @@
+.widget-indico-meetings {
+    h1, h2 {
+        margin-bottom: 1em;
+    }
+
+    ul.avatar-list {
+        li {
+            display: inline-block;
+            text-align: left;
+            list-style-type: none;
+
+            * {
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+            img.user {
+                width: 32px;
+                border-radius: 4px;
+
+                &[data-wrote-minutes="false"] {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+
+    .date {
+        margin-bottom: 1em;
+        opacity: 0.6;
+    }
+
+    .updated-at {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    overflow: hidden;
+    background-color: #3A6EA9;
+}
