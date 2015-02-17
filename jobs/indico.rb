@@ -46,7 +46,7 @@ def humanize_delta(seconds)
       plural "#{minutes} minute", minutes
     end
   else
-    plural "#{seconds} second", seconds
+    plural "#{seconds} second", seconds.to_i
   end
 end
 
